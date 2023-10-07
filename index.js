@@ -69,7 +69,7 @@ app.put('/update-profile/:userId', upload.single('profileImage'), async (req, re
     if (existingUser.profileImage) {
       // Delete the existing profile image from the "uploads" folder
       const imagePath = path.join(__dirname, 'uploads', existingUser.profileImage);
-      fs.unlinkSync(imagePath);
+      // fs.unlinkSync(imagePath);
     }
 
     if (profileImage) {
