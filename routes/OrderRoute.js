@@ -1,6 +1,6 @@
 import express from "express";
 import { addOrderHandler, deleteOrderHandler, getAllOrderHandler, getSpecificUserAllOrderHandler, getSpecificUserOrderDetailHandler, getUpdateFailureStatusHandler, getUpdateSuccessStatusHandler, updateOrderStatusHandler } from "../Controller/orderController.js";
-import { updateOrderPaymentFailureStatusHandler, updateOrderPaymentSuccessStatusHandler } from "../../client/src/services/orderApi.js";
+
 
 const router = express.Router();
 
