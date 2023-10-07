@@ -122,8 +122,8 @@ app.post("/api/create-checkout-session",async(req,res)=>{
       payment_method_types:["card"],
       line_items:lineItems,
       mode:"payment",
-      success_url:`http://localhost:5173/paymentSuccess/?orderId=${orderId}&state=success`,
-      cancel_url:`http://localhost:5173/payementFailed/?orderId=${orderId}&state=failure`,
+      success_url:`https://final-ui-with-wrapper-xxzp.vercel.app/paymentSuccess/?orderId=${orderId}&state=success`,
+      cancel_url:`https://final-ui-with-wrapper-xxzp.vercel.app/payementFailed/?orderId=${orderId}&state=failure`,
   });
 
   res.json({id:session.id})
