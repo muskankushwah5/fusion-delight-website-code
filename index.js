@@ -6,7 +6,7 @@ import dotenv from "dotenv";
 import Stripe from "stripe";
 const stripe = Stripe("sk_test_51NxYGfSFxfpHSZoyMuToQalTItt2fqG3nAhsJfolXNUAXU7Uh0WBnN3NH0smIQxAvGRetA0Q6ALI0UBPS7wlRtOA00OdOmMixX");
 
-import userRoutes from "./routes/userRoute.js";
+import userRoutes from "./routes/UserRoute.js";
 import bookingRoute from "./routes/BookingRoute.js";
 import dishRoutes from "./routes/DishRoute.js";
 import orderRoutes from "./routes/OrderRoute.js";
